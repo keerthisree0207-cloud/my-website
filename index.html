@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>My Basic Website</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.png" /> 
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <header>
+            <div>
+            <label>My Website</label>
+            <span>Welcome to my Basic Web Design</span>
+            </div> 
+            <nav>
+                <ul>
+                    <li><a href="#"onclick="navigateSection('s1')">Home</a></li>
+                    <li><a href="#"onclick="navigateSection('s2')">About</a></li>
+                    <li><a href="#"onclick="navigateSection('s3')">Services</a></li>
+                    <li><a href="#"onclick="navigateSection('s4')">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="s1">
+            <div><h2>Home page</h2></div>
+        </section>
+        <section id="s2">
+            <div><h2>About</h2></div>
+        </section>
+        <section id="s3">
+            <div><h2>Services</h2></div>
+        </section>
+        <section id="s4">
+            <div><h2>Contact</h2></div>
+        </section>
+         <footer>Copyright @2025, All rights reserved. </footer>
+    </body>
+    <script>
+        function navigateSection(id)
+        {
+            //alert(id);
+            document.getElementById(id).scrollIntoView({behavior:'smooth'});
+        }
+    </script>
+</html>
